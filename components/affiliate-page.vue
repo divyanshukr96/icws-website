@@ -20,7 +20,7 @@
   .container {
     background-color: #2B2D42;
     margin: 0 auto;
-    min-height: 100vh;
+    min-height: 60vh;
     display: flex;
     /*flex-direction: row-reverse;*/
     align-items: center;

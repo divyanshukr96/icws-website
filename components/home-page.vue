@@ -8,7 +8,7 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">contact</a>
-        <div class="menu-icon">
+        <div class="menu-icon" @click.prevent="toggleNav">
           <span></span>
           <span></span>
           <span></span>
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div style="position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%)">
-      <img src="~/assets/images/mouse.svg">
+      <img src="~/assets/images/mouse.svg" alt="mouse">
     </div>
     <div class="home-container">
       <div class="home">
@@ -33,13 +33,18 @@
         </div>
       </div>
     </div>
-    hhh
+    <div class="home-image">
+      <img src="~/assets/images/new company vector 1.svg" alt="">
+    </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: "home-page"
+    name: "home-page",
+    props: {
+      toggleNav: Function,
+    },
   }
 </script>
 
@@ -65,6 +70,14 @@
     justify-content: center;
     align-items: center;
 
+  }
+
+  .home-image {
+    width: 42%;
+  }
+
+  .home-image img {
+    width: 100%;
   }
 
   .title {
@@ -119,7 +132,7 @@
 
   .home-navbar {
     position: absolute;
-    top: 32px;
+    top: 10px;
     left: 60px;
     right: 60px;
     height: 80px;
@@ -148,12 +161,12 @@
     width: 44px;
     height: 44px;
     background: #2B2D42 0 0 no-repeat padding-box;
-    opacity: 1;
     padding-top: 12px;
     transform: rotate(-90deg);
 
 
     margin: 0 16px;
+    cursor: pointer;
   }
 
   .menu-icon span {
@@ -161,6 +174,11 @@
     border: 1px solid #FFFFFF;
     opacity: 1;
     margin: 2px;
+  }
+
+
+  @keyframes nav-slider {
+
   }
 
 </style>

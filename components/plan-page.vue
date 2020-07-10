@@ -1,6 +1,7 @@
 <template>
   <div class="plan-container">
 
+    <div class="backdrop"></div>
     <div>
       <plan-card></plan-card>
     </div>
@@ -38,9 +39,20 @@
     position: relative;
   }
 
+  .plan-container .backdrop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #2B2D42;
+    margin: auto;
+    z-index: 1;
+  }
+
   .plan-container > div {
     width: 320px;
-    margin: 0 16px;
+    z-index: 5;
   }
 
 </style>

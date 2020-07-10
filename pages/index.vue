@@ -1,7 +1,7 @@
 <template>
   <div>
-    <header-home></header-home>
-    <home-page></home-page>
+    <header-home v-bind:navOpen="navOpen" v-bind:toggleNav="toggleNav"></header-home>
+    <home-page v-bind:toggleNav="toggleNav"></home-page>
     <about-page></about-page>
     <plan-page></plan-page>
     <service-page></service-page>
@@ -20,7 +20,19 @@
   import HeaderHome from "../components/header-home";
 
   export default {
-    components: {HeaderHome, PlanPage, AffiliatePage, ContactUsPage, ServicePage, AboutPage, HomePage}
+    components: {HeaderHome, PlanPage, AffiliatePage, ContactUsPage, ServicePage, AboutPage, HomePage},
+
+    data: function () {
+      return {
+        navOpen: false,
+      }
+    },
+    methods: {
+      toggleNav() {
+        this.navOpen = !this.navOpen;
+      }
+    }
+
   }
 </script>
 

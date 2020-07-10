@@ -1,22 +1,13 @@
 <template>
-  <div class="container">
-
-    <div>
+  <div class="service-container">
+    <div class="backdrop"></div>
+    <div class="service-container-content">
+      <service-card></service-card>
+      <service-card></service-card>
+      <service-card></service-card>
+      <service-card></service-card>
       <service-card></service-card>
     </div>
-    <div>
-      <service-card></service-card>
-    </div>
-    <div>
-      <service-card></service-card>
-    </div>
-    <div>
-      <service-card></service-card>
-    </div>
-    <div>
-      <service-card></service-card>
-    </div>
-
   </div>
 </template>
 
@@ -30,30 +21,42 @@
 </script>
 
 <style scoped>
-  .container {
-    background-color: #FAA916 !important;
+  .service-container {
+    background-color: #2B2D42;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
-    /*flex-direction: row-reverse;*/
-    align-items: initial !important;
     text-align: center;
     position: relative;
 
+    align-items: center;
     justify-content: center;
 
-
-
-    padding: 64px 48px;
   }
 
-  .container > div {
-    width: 220px;
-    margin: 0 8px;
+
+  .service-container .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #FAA916;
+    margin: auto;
+    z-index: 1;
   }
 
-  .container > div:nth-child(even) {
-    align-self: flex-end;
+  .service-container-content {
+    display: flex;
+    max-width: 1400px;
+  }
+
+  .service-container-content > div:nth-child(odd) {
+    transform: translateY(-25%);
+  }
+
+  .service-container-content > div:nth-child(even) {
+    transform: translateY(25%);
   }
 
 

@@ -25,8 +25,22 @@
     border-radius: 8px;
 
     background: #2B2D42 0 0 no-repeat padding-box;
-    border: 1px solid #707070;
     color: #fff;
+
+    transition: 0.5s ease;
+    cursor: default;
+    margin: 16px;
+
+    -webkit-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .card:hover {
+    transform: scale(1.15);
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
   }
 
   .card .card-title {
