@@ -8,7 +8,7 @@
     <div class="home-about">
       <div class="content">
         <div class="title">Design</div>
-        <div style=" padding: 8px 16px; font-size: 20px; text-align: justify;">
+        <div class="details">
           Something about us will come here and will be formatted withing this box only so keep the word limit and rest
           of
           the content in mind. Rest all is gibberish from here on no need tro read this stuff. Avenir is one of my
@@ -33,6 +33,7 @@
     background-color: #2B2D42;
     margin: 0 auto;
     min-height: 100vh;
+    width: 100%;
     display: flex;
     /*flex-direction: row-reverse;*/
     align-items: center;
@@ -53,12 +54,10 @@
 
   .title {
     text-align: initial;
-    font-size: 80px;
-    white-space: pre-line;
+    font-size: 70px;
     line-height: 1;
     color: #eee;
     font-weight: 500;
-    margin-bottom: 16px;
   }
 
   .home-about .title {
@@ -67,10 +66,9 @@
   }
 
   .title.rotate {
-    transform: rotate(-90deg) translateX(25%);
-    min-height: 300px;
-    bottom: 0;
-    position: absolute;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
   }
 
   .home {
@@ -81,17 +79,85 @@
 
   .home-about {
     padding: 64px;
-    width: fit-content;
-    text-align: initial;
+    width: inherit;
+    /*text-align: initial;*/
 
     display: flex;
-    justify-content: end;
+    flex-direction: row-reverse;
+    justify-content: center;
     position: relative;
     color: #eee;
   }
 
   .home-about .content {
-    margin-left: 115px;
+    max-width: 600px;
+  }
+
+
+  .content .details {
+    padding: 8px 16px;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .home-about {
+      padding: 32px;
+    }
+
+    .title {
+      font-size: 58px;
+      margin: 0;
+    }
+
+    .content .details {
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .container > .home-container {
+      /*display: none;*/
+    }
+
+    .home-about {
+      padding: 16px;
+    }
+
+    .title {
+      font-size: 48px;
+    }
+
+    .content .details {
+      padding: 8px;
+      font-size: 17px;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container > .home-container {
+      /*position: absolute;*/
+      /*min-height: unset;*/
+      /*top: 0;*/
+      /*left: 0;*/
+      /*width: 100%;*/
+      /*height: 50%;*/
+      display: none;
+    }
+
+    /*.container > .home-container > div {*/
+    /*  display: none;*/
+    /*}*/
+    .title {
+      font-size: 40px;
+    }
+
+    .content .details {
+      font-size: 16px;
+    }
+
+
   }
 
 </style>

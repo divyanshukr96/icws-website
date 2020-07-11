@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-home v-bind:navOpen="navOpen" v-bind:toggleNav="toggleNav"></header-home>
+    <!--    <header-home v-bind:navOpen="navOpen" v-bind:toggleNav="toggleNav"></header-home>-->
     <home-page v-bind:toggleNav="toggleNav"></home-page>
     <about-page></about-page>
     <plan-page></plan-page>

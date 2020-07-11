@@ -51,13 +51,24 @@
     max-width: 1400px;
   }
 
-  .service-container-content > div:nth-child(odd) {
-    transform: translateY(-25%);
+
+  @media only screen and (min-width: 1200px) {
+    .service-container-content > div:nth-child(odd) {
+      transform: translateY(-25%);
+    }
+
+    .service-container-content > div:nth-child(even) {
+      transform: translateY(25%);
+    }
   }
 
-  .service-container-content > div:nth-child(even) {
-    transform: translateY(25%);
-  }
+  @media only screen and (max-width: 1200px) {
 
+    .service-container-content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+  }
 
 </style>

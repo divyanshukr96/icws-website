@@ -20,6 +20,7 @@
 
 <script>
   import ContactForm from "./contact-form";
+
   export default {
     name: "contact-us-page",
     components: {ContactForm}
@@ -82,6 +83,7 @@
     border: 1px solid #707070;
     border-radius: 20px;
     width: 360px;
+    margin: 8px;
   }
 
   .contact-form-container > div:first-child {
@@ -99,6 +101,53 @@
     /*border: 1px solid #707070;*/
     border-radius: 20px;
     padding: 20px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    .contact-title {
+      padding: unset;
+    }
+
+    .contact-title .title {
+      font-size: 64px;
+    }
+
+    .contact-title div > span {
+      font-size: 24px;
+    }
+
+  }
+
+  @media only screen and (max-width: 900px) {
+
+    .contact-title {
+      padding: unset;
+    }
+
+    .contact-title .title {
+      font-size: 48px;
+    }
+
+    .contact-title div > span {
+      font-size: 18px;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+
+    .container .contact-container {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    .contact-title {
+      padding: 32px 0;
+    }
   }
 
 </style>

@@ -20,6 +20,7 @@
     padding: 20px;
     border-radius: 8px;
     max-width: 300px;
+    min-width: 240px;
     margin: 16px;
 
     background: #2B2D42 0 0 no-repeat padding-box;

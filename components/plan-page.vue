@@ -3,7 +3,6 @@
 
     <div class="backdrop"></div>
 
-
     <plan-card></plan-card>
     <plan-card></plan-card>
     <plan-card></plan-card>
@@ -26,7 +25,7 @@
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
-    /*flex-direction: row-reverse;*/
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -45,8 +44,7 @@
   }
 
   .plan-container > div {
-    width: 350px;
+    width: 330px;
     z-index: 5;
   }
-
 </style>
