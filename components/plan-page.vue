@@ -2,17 +2,11 @@
   <div class="plan-container">
 
     <div class="backdrop"></div>
-    <div>
-      <plan-card></plan-card>
-    </div>
 
-    <div>
-      <plan-card></plan-card>
-    </div>
 
-    <div>
-      <plan-card></plan-card>
-    </div>
+    <plan-card></plan-card>
+    <plan-card></plan-card>
+    <plan-card></plan-card>
 
   </div>
 </template>
@@ -51,7 +45,7 @@
   }
 
   .plan-container > div {
-    width: 320px;
+    width: 350px;
     z-index: 5;
   }
 

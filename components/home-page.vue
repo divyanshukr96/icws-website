@@ -102,9 +102,9 @@
 
 
   .btn {
-    margin-top: 30px;
+    margin-top: 20px;
 
-    height: 75px;
+    height: 120px;
     width: 280px;
     font-size: 28px;
 
@@ -123,7 +123,7 @@
     line-height: 1.1;
     text-transform: uppercase;
     color: #eee;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .quotes span {

@@ -4,18 +4,7 @@
       <div class="contact-form-container">
         <div><span>Send us any query</span></div>
         <div class="contact-form">
-          <label>
-            <input type="text"/>
-          </label>
-          <label>
-            <input type="text"/>
-          </label>
-          <label>
-            <input type="text"/>
-          </label>
-          <label>
-            <input type="text"/>
-          </label>
+          <contact-form></contact-form>
         </div>
       </div>
     </div>
@@ -30,8 +19,10 @@
 </template>
 
 <script>
+  import ContactForm from "./contact-form";
   export default {
-    name: "contact-us-page"
+    name: "contact-us-page",
+    components: {ContactForm}
   }
 </script>
 
@@ -72,7 +63,7 @@
 
   .contact-title .title {
     text-align: initial;
-    font-size: 80px;
+    font-size: 72px;
     white-space: pre-line;
     line-height: 1;
     color: #eee;
@@ -83,14 +74,14 @@
   .contact-title div > span {
     letter-spacing: 0;
     color: #FFFFFF;
-    font-size: 34px;
+    font-size: 28px;
   }
 
   .contact-form-container {
     background: #FAA916 0 0 no-repeat padding-box;
     border: 1px solid #707070;
     border-radius: 20px;
-    width: 400px;
+    width: 360px;
   }
 
   .contact-form-container > div:first-child {
@@ -105,7 +96,7 @@
 
   .contact-form-container > .contact-form {
     background: #FFFFFF 0 0 no-repeat padding-box;
-    border: 1px solid #707070;
+    /*border: 1px solid #707070;*/
     border-radius: 20px;
     padding: 20px;
   }

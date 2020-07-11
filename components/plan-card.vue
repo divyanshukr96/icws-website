@@ -27,21 +27,15 @@
     background: #2B2D42 0 0 no-repeat padding-box;
     color: #fff;
 
-    transition: 0.5s ease;
+    transition: all 0.5s ease;
     cursor: default;
-    margin: 16px;
+    margin: 20px;
 
     -webkit-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.5);
     box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.5);
   }
 
-  .card:hover {
-    transform: scale(1.15);
-    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
-  }
 
   .card .card-title {
     font-size: 28px;
@@ -82,5 +76,43 @@
     color: #2B2D42;
     font-size: 20px;
     font-weight: 500;
+    transition: all .25s ease;
+  }
+
+
+  .card:hover {
+    transform: scale(1.15);
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    color: #0F0605;
+  }
+
+  .card:hover .card-title {
+    color: #0F0605;
+  }
+
+  .card:hover p {
+    border-top: 1px solid #707070;
+  }
+
+  .card:hover h3 {
+    color: #707070;
+  }
+
+  .card:hover p:last-child {
+    border-bottom: 1px solid #707070;
+  }
+
+  .btn:hover {
+    -webkit-box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  .card:hover .btn {
+    background: #FAA916 0 0 no-repeat padding-box;
+    color: #fff;
   }
 </style>
